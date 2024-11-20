@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Курсы по гаданию на Таро</title>
+    <link rel="icon" href="https://i.pinimg.com/736x/27/e5/53/27e55399455deae32146c6168539be07.jpg" />
+  </head>
+  <body>
+    <header id = "#header" class="header">
+      <div class="overlay">
+        <h1 id = "up" class="header-title">Курсы по гаданию на Таро</h1>
+      </div>
+    </header>
+    <header class = "second-header"> 
+        <div class = "second-overlay">
+            <h1 class = "second-header-title">С языка символов — на язык людей</h1>
+        </div>
+    </header>
+    <header class = "navigation"> 
+        <nav> 
+            <ul class = "lists">
+                <li>
+                    <a href="index_1.html"> <u>Главная</u> </a>
+                  </li>
+                  <li><a href="index_2.html">О курсе</a></li>
+                  <li><a href="index_3.html">Карта дня</a></li>
+                  <li><a href="index_4.html">Записаться на курс</a></li>
+                  <li><a href="passport.html">Паспорт</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h3 class = "course-title"> Решение алгоритмической задачи </h3>
+    <h1>Проверка прохода коробки через дверь</h1>
+
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+      <ul>
+          <li>Для поисковика:<input name="q" value="search"></li>
+          <li>Формулировка задачи 
+              <br><textarea cols="60" rows="4" id="task" name="formulation">Имеется коробка со сторонами: A × B × C. Определить, пройдёт ли она в дверь с размерами M × K.</textarea></li>
+          <li><label for="boxA" >Длина коробки, см (A):</label>
+            <input type="number" id="boxA" value="100" required></li>
+          <li><label for="boxB" >Ширина коробки, см (B):</label>
+            <input type="number" id="boxB" value="60" required></li>
+          <li><label for="boxC" >Высота коробки, см (C):</label>
+            <input type="number" id="boxC" value="40" required></li>
+          <li><label for="doorM" >Ширина двери, см (M):</label>
+            <input type="number" id="doorM" value="60" required></li>
+          <li><label for="doorK" >Высота двери, см (K):</label>
+            <input type="number" id="doorK" value="210" required></li>
+          <li>действие 1: 
+            <button onclick="checkBoxFit()">Проверить</button>
+            <div class="result" id="result"></div></li>
+          <li>действие 2: <input type="Submit" name="submit" value="Отправить"></li>
+      </ul>
+  </form>
+
+
+<script>
+function CanBoxFitThroughDoor(A, B, C, M, K) {
+    const boxOrientations = [
+        [A, B],
+        [A, C],
+        [B, C],
+        [B, A],
+        [C, A],
+        [C, B]
+    ];
+
+    for (let i = 0; i < boxOrientations.length; i++) {
+        const [width, height] = boxOrientations[i];
+
+        if ((width <= M && height <= K) || (width <= K && height <= M)) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function checkBoxFit() {
+    const A = parseFloat(document.getElementById('boxA').value);
+    const B = parseFloat(document.getElementById('boxB').value);
+    const C = parseFloat(document.getElementById('boxC').value);
+    const M = parseFloat(document.getElementById('doorM').value);
+    const K = parseFloat(document.getElementById('doorK').value);
+
+    const resultDiv = document.getElementById('result');
+
+    if (CanBoxFitThroughDoor(A, B, C, M, K)) {
+        resultDiv.textContent = "Коробка пройдет через дверь.";
+    } else {
+        resultDiv.textContent = "Коробка не пройдет через дверь.";
+    }
+}
+</script>
+
+     <footer class="footer">
+        <h4 id = "cooperation" class="footer-author">
+          Moose x Tarot 
+        </h4>
+      </footer>
+      <footer class = "minifooter">
+        <h4 class = "footer-cooperation">По вопросам сотрудничества: <a href = "https://t.me/Hello_from_Alexander" target = "_blank">@Hello_from_Alexander </a></h4>
+      </footer>
+      </body>
+    </html>
+    
