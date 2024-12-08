@@ -20,23 +20,27 @@
     <main>
         <section id="about">
             <h2>Что такое карты Таро?</h2>
-            <p>Карты Таро используются для гадания, предсказания и самопознания. Выбери карту и узнай свое будущее!</p>
+            <p>Карты Таро помогают найти ответы на вопросы и подсказать путь. Выбери карту и узнай свое предсказание!</p>
         </section>
         <section id="cards">
             <h2>Выбери карту</h2>
             <div class="card-container">
-                <div class="card">Карта 1</div>
-                <div class="card">Карта 2</div>
-                <div class="card">Карта 3</div>
+                <!-- Карты будут добавлены через JavaScript -->
+            </div>
+            <div id="result" class="hidden">
+                <h3>Ваше предсказание:</h3>
+                <p id="prediction-text"></p>
+                <button id="try-again">Попробовать снова</button>
             </div>
         </section>
         <section id="contact">
             <h2>Контакты</h2>
-            <p>Если у вас есть вопросы, свяжитесь с нами по email: tarot@example.com</p>
+            <p>Если у вас есть вопросы, напишите нам: <a href="mailto:tarot@example.com">tarot@example.com</a></p>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Гадание на картах Таро</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
