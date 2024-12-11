@@ -3,30 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Курсы по гаданию на Таро</title>
+    <title>Курсы по гаданию на Таро</title>
     <link rel="icon" href="https://i.pinimg.com/736x/27/e5/53/27e55399455deae32146c6168539be07.jpg" />
+    <link rel="stylesheet" href="style_2.css"/>
   </head>
+
   <body>
-    <header id = "#header" class="header">
+    <header id="#first-header" class="first-header">
       <div class="overlay">
-        <h1 class="header-title">Курсы по гаданию на Таро</h1>
+        <h1 class="header-title" id="up">Курсы по гаданию на Таро</h1>
       </div>
     </header>
-    <header class = "second-header"> 
-        <div class = "second-overlay">
-            <h1 class = "second-header-title">С языка символов — на язык людей</h1>
+
+    <header class="second-header">
+        <div class="overlay">
+            <h1 class="header-title">С языка символов — на язык людей</h1>
         </div>
     </header>
     <header class = "navigation"> 
             <nav > 
                 <ul class = "lists">
                     <li>
-                        <a href="index_1.html"> <u>Главная</u> </a>
+                        <a href="index_1.html">Главная</a>
                       </li>
-                      <li><a href="index_2.html">О курсе</a></li>
-                      <li><a href="index_3.html">Карта дня</a></li>
+                      <li><a href="index_2.html"> <u>О курсе</u> </a></li>
                       <li><a href="index_4.html">Записаться на курс</a></li>
-                      <li><a href="passport.html">Паспорт</a></li>
                 </ul>
             </nav>
     </header>
@@ -42,6 +43,7 @@
     </header>
 
 
+  <div class = "course-container">
   <div class = "course-content"> 
         <h3 id = "purpose" class = "course-title"> О чём курс?</h3>
         <p> 
@@ -83,16 +85,24 @@
       <li>Улучшение собственной интуиции</li>
     </ol>
   </div>
+</div>
+</div>  
 
-<h3 class = "course-title"> Отзывы </h3>
+
  <section class="content"> 
-      <div>
+  <div class = "feedback-container">
+      <div class = "feedback-content">
+        <h3 class = "course-title"> Отзывы </h3>
         <img id = "feedbacks"
           src="Отзыв.png"
           alt="Единственный отзыв"
           title="Отзыв">
       </div>
  </section>
+
+ <div class="up">
+  <h5 class="up-text"><a href="#up"> Наверх</a></h5>
+</div>
 
  <footer class="footer">
     <h4 id = "cooperation" class="footer-author">
