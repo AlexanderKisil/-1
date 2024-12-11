@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Курсы по гаданию на Таро</title>
     <link rel="icon" href="https://i.pinimg.com/736x/27/e5/53/27e55399455deae32146c6168539be07.jpg" />
+    <link rel="stylesheet" href="style_2.css"/>
   </head>
   <body>
     <header id = "#header" class="header">
@@ -14,26 +15,33 @@
     </header>
     <header class = "second-header"> 
         <div class = "second-overlay">
-            <h1 class = "second-header-title">С языка символов — на язык людей</h1>
+            <h1 class = "header-title">С языка символов — на язык людей</h1>
         </div>
     </header>
     <header class = "navigation"> 
         <nav> 
             <ul class = "lists">
                 <li>
-                    <a href="index_1.html"> <u>Главная</u> </a>
+                    <a href="index_1.html">Главная</a>
                   </li>
                   <li><a href="index_2.html">О курсе</a></li>
-                  <li><a href="index_3.html">Карта дня</a></li>
-                  <li><a href="index_4.html">Записаться на курс</a></li>
-                  <li><a href="passport.html">Паспорт</a></li>
+                  <li><a href="index_4.html"><u>Записаться на курс</u></a></li>
             </ul>
         </nav>
     </header>
 
+    <header class = "page-navigation">
+      <nav> 
+        <ul>
+          <li> <a href = "#table">Пояснительная таблица</a> </li>
+          <li> <a href = "#future-cooperation">Сотрудничество</a></li>
+        </ul>
+      </nav>
+    </header>
+
    <h3 class = "page-frame" align = "center">Пояснительная таблица</h3>
 
-<table align = "center" cellspacing="0" cellpadding="10" border ="2"  width="700px" background = "background.webp">
+<table id = "table" align = "center" cellspacing="0" cellpadding="10" border ="2"  width="700px" background = "background.webp">
 <tbody>
 <tr>
  <td colspan="3" bgcolor="#A0BEC4" height="50px" align = "center"> Здесь я не смог придумать описание</td>
@@ -61,7 +69,7 @@
 
     </tbody>
 
-    <h2 class = "course-title">Пожалуйста, внесите информацию о себе</h3>
+    <h2 class = "course-title">Пожалуйста, внесите информацию о себе</h2>
 
     <form class = "form" action = 'https://www.google.ru/?hl=ru' method = "get" target = "_blank">
 
@@ -111,13 +119,18 @@
       <input type="Submit" name="submit"  value="Отправить">
   </p>
     </form>
+
+    <div class="up">
+      <h5 class="up-text"><a href="#up"> Наверх</a></h5>
+    </div>
+
     <footer class="footer">
         <h4 id = "cooperation" class="footer-author">
           Moose x Tarot 
         </h4>
       </footer>
       <footer class = "minifooter">
-        <h4 class = "footer-cooperation">По вопросам сотрудничества: <a href = "https://t.me/Hello_from_Alexander" target = "_blank">@Hello_from_Alexander </a></h4>
+        <h4 class = "footer-cooperation" id = "footer-cooperation">По вопросам сотрудничества: <a href = "https://t.me/Hello_from_Alexander" target = "_blank">@Hello_from_Alexander </a></h4>
       </footer>
   </body>
 </html>
